@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
- * version 1
+ * version 0.1
  */
 public class Robot extends IterativeRobot {
     final String defaultAuto = "Default";
@@ -16,7 +16,7 @@ public class Robot extends IterativeRobot {
     SendableChooser chooser;
 	
     /**
-     * Version 1
+     * version 0.1
      */
     public void robotInit() {
         chooser = new SendableChooser();
@@ -26,7 +26,13 @@ public class Robot extends IterativeRobot {
     }
     
 	/**
-	 * Version 1
+	 * This autonomous (along with the chooser code above) shows how to select between different autonomous modes
+	 * using the dashboard. The sendable chooser code works with the Java SmartDashboard. If you prefer the LabVIEW
+	 * Dashboard, remove all of the chooser code and uncomment the getString line to get the auto name from the text box
+	 * below the Gyro
+	 *
+	 * You can add additional auto modes by adding additional comparisons to the switch structure below with additional strings.
+	 * If using the SendableChooser make sure to add them to the chooser code above as well.
 	 */
     public void autonomousInit() {
     	autoSelected = (String) chooser.getSelected();
